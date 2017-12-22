@@ -1,0 +1,51 @@
+
+        
+    jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    
+    mvc:
+     view:
+       prefix: /WEB-INF/jsp/
+       suffix: .jsp
+
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+      
+    datasource:
+    url: jdbc:mysql://localhost/project_rsoi
+    username: root
+    password: root
+    driver-class:
+         name: com.mysql.jdbc.Driver
+         
+    testOnBorrow: true
+    removeAbandonedTimeout: 1800
+    removeAbandoned: true
+    validationQuery: SELECT 1 FROM DUAL
+    logAbandoned: true
+    minEvictableIdleTimeMillis: 60000
+    defaultReadOnly: false
+    maxWait: 60000
+    maxIdle: 1
+    minIdle: 0
+    maxActive: 50
+    initialSize: 1
+            
+  eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    nonSecurePort: 8080
+ 
+management:
+  security:
+     enabled: false
+            
+
+            
+
+ 
+
