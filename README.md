@@ -1,0 +1,2 @@
+# propiedades
+Propiedades para microservicios 
